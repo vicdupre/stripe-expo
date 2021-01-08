@@ -27,6 +27,8 @@ function _findType(details, keys) {
     return keys.indexOf("card");
   } else if (details.bank_account != null) {
     return keys.indexOf("bank_account");
+  } else if (details.account != null) {
+    return keys.indexOf("account");
   } else if (details.pii != null) {
     return keys.indexOf("pii");
   } else if (details.account != null) {
